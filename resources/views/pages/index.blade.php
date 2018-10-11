@@ -16,21 +16,17 @@
                 <!-- Blog Post -->
                 @foreach($news as $newsItem)
                 <div class="card mb-4">
-                    <div class="card-body">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-2">
-                                    <img class="img-thumbnail"
+                    <div class="card-body d-flex">
+
+                                    <img class="img-thumbnail mr-4 thumbnail"
                                          src="{{URL::to('public/images/'.$newsItem->thumbnail)}}"
                                     >
-                                </div>
-                                <div class="col-10">
+
+                                <div>
                                     <h2 class="card-title">{{$newsItem->title}}</h2>
                                     <p class="card-text">{{$newsItem->description}}</p>
-                                    <a href="#" class="btn btn-primary">Tovább &rarr;</a>
+                                    <a href="{{route('news.show',$newsItem->slug)}}" class="btn btn-primary">Tovább &rarr;</a>
                                 </div>
-                            </div>
-                        </div>
                     </div>
                     <div class="card-footer text-muted">
                         {{$newsItem->created_at}}
