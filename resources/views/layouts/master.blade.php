@@ -22,6 +22,12 @@
         @yield('content')
     </main>
 </div>
+<footer class="py-5">
+    <div class="container">
+        <p class="m-0 text-center">Minden jog fenntartva &copy; Szalai Mihály 2018</p>
+    </div>
+    <!-- /.container -->
+</footer>
 </body>
 <script src="{{URL::to('public/css/app.js')}}"></script>
 </html>
