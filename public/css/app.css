@@ -10476,3 +10476,14 @@ a.text-dark:focus {
   max-height: 160px;
 }
 
+@media (max-width: 575.98px) {
+  .news-content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .thumbnail {
+    margin: 0 auto;
+  }
+}
+

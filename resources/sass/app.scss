@@ -16,3 +16,12 @@
 .thumbnail{
   max-height: 160px;
 }
+
+@include media-breakpoint-down(xs) {
+  .news-content{
+    flex-wrap: wrap;
+  }
+  .thumbnail{
+    margin: 0 auto;
+  }
+}
