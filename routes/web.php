@@ -11,3 +11,4 @@
 |
 */
 Route::get('/', 'NewsController@index');
+Route::get('/news/{slug}', ['uses' => 'NewsController@show', 'as' => 'news.show']);

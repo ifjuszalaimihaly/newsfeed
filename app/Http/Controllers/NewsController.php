@@ -12,4 +12,10 @@ class NewsController extends Controller
 	    return view('pages.index')
 		    ->withNews($news);
     }
+
+    public function show($slug){
+    	$newsItem = News::whereSlug($slug)->first();
+    	return view('pages.show')
+		    ->withnewsItem($newsItem);
+    }
 }
